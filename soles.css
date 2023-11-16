@@ -1,0 +1,275 @@
+
+/* Images */
+
+img {
+	border-radius: 15px;
+	text-align: center;
+	max-width: 80%;
+	height: auto;
+  	box-shadow: 3px 3px 5px #6B5E38;
+	padding: 10px 10px 10px 10px;
+}
+
+header img {
+	border-radius: 250px;
+	border: 3px solid linear-gradient(to right, #6B5E38, #EED17C);
+	background: linear-gradient(to right, #6B5E38, #EED17C);
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+  	box-shadow: 3px 3px 10px #6B5E38;
+	padding: 0px 0px 0px 0px;
+	margin: 50px 0px 50px 0px;
+}
+
+.small {
+	height: 90px;
+	width: 120px;
+}
+
+/* Text */
+
+p {
+	padding: 50px 0px 50px 0px;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: Satisfy, fantasy;
+	padding: 0px 0px 30px 0px;
+}
+
+.textdecoration {
+	text-shadow: 1px 1px 1px #f9ca38,
+        	     1px 2px 1px #f9ca38,
+             	 1px 3px 1px #6B5E38,
+             	 1px 4px 1px #6B5E38,
+             	 1px 5px 1px #EED17C,
+             	 1px 6px 1px #EED17C,
+             	 1px 10px 5px rgba(16, 16, 16, 0.5),
+             	 1px 15px 10px rgba(16, 16, 16, 0.4),
+             	 1px 20px 30px rgba(16, 16, 16, 0.3),
+        	     1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+table, td, th {
+	border-collapse: collapse;
+	padding: 10px 30px 10px 30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	border: 1px groove #f9ca38;
+}
+
+/* Links */
+
+a:visited, a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+a:active, a:hover, a:focus, .active {
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+/* Banner animation */
+
+.banner, .banner img {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap; /* Makes no space between them */
+	width: 1400px;
+	height: 150px;
+	box-shadow: 3px 3px 5px #6B5E38;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-radius: 25px;
+	margin: 0 auto;
+	padding: 0px 0px 6px 0px;
+	background: conic-gradient(from 0deg, #EED17C 0deg, #6B5E38 36deg, #f9ca38 72deg, #6B5E38 108deg, #EED17C 144deg, #EED17C 180deg, #6B5E38 216deg, #f9ca38 252deg, #6B5E38 288deg, #EED17C 324deg);
+}
+
+.banner > div {
+	animation: slide 35s forwards 2.5s infinite;
+	display: inline-block;
+}
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	16.5% { transform: translateX(-1400px); }
+   	33% { transform: translateX(-2800px); }
+	49.5% { transform: translateX(-4200px); }
+	66% { transform: translateX(-5600px); }
+	82.5% { transform: translateX(-7000px); }
+	100% { transform: translateX(-8400px); }
+	0% { transform: translateX(0); }
+}
+
+/* Sections */
+
+aside {
+	width: 20%;
+	float: left;
+	line-height: 3;
+	padding: 2em 2em 2em 2em;
+	margin: 50px 0px 50px 0px;
+	border-radius: 50px 0px 50px 0px;
+	border-top: 4px groove #EED17C;
+	border-right: 4px groove #EED17C;
+	background: linear-gradient(to top right, #6B5E38, #EED17C, #F9CA38, #F9CA38, #F9CA38, #EED17C, #6B5E38);
+	letter-spacing: 2px;
+	font-weight: 900;
+	font-size: 16px;
+	text-align: center;
+	box-shadow: 3px 3px 5px #6B5E38;
+}
+
+ul, li {
+	list-style: none;
+	padding-left: 0;
+}
+
+section {
+	width: 78%;
+	float: right;
+	padding: 2em 2em 2em 2em;
+	margin: 50px 0px 50px 0px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	overflow: hidden;
+	flex-wrap: wrap;
+	white-space: normal;
+	justify-content: center;
+	padding: 20px 20px 20px 20px;
+	border-radius: 15px;
+	gap: 150px;
+	width: auto;
+	height: auto;
+}
+
+footer {
+	letter-spacing: 2px;
+	font-weight: 900;
+	font-size: 15px;
+	text-align: center;
+	line-height: 2;
+	color: black;
+	width: 80%;
+	background: conic-gradient(from 0deg, #EED17C 0deg, #6B5E38 36deg, #f9ca38 72deg, #6B5E38 108deg, #EED17C 144deg, #EED17C 180deg, #6B5E38 216deg, #f9ca38 252deg, #6B5E38 288deg, #EED17C 324deg);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px 50px 0px 0px;
+	padding: 20px 0px 20px 0px;
+	box-shadow: 3px 3px 5px #6B5E38;
+	border-top: 4px groove #EED17C;
+}
+
+/* Coloured hover */
+
+aside:hover, img:hover, .banner:hover, .banner img:hover {
+	box-shadow: 3px 3px 5px #B89428;
+}
+
+footer:hover {
+	box-shadow: 3px 3px 20px #B89428;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+
+body {
+	width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+
+aside {
+	width: 100%;
+}
+
+section {
+	width: 100%;
+}
+
+footer {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px 50px 0px 0px;
+	padding: 30px 30px 30px 30px;
+}
+
+img {
+	max-width: 90%;
+}
+
+.banner, .banner img {
+	width: 100%; /* Broken */
+}
+}
+
+/* Floating Arrow */
+
+.top {
+	position: sticky;
+	bottom: 20px;
+	padding: 7px 13px 7px 15px;
+	background: conic-gradient(from 0deg, #EED17C 0deg, #6B5E38 36deg, #f9ca38 72deg, #6B5E38 108deg, #EED17C 144deg, #EED17C 180deg, #6B5E38 216deg, #f9ca38 252deg, #6B5E38 288deg, #EED17C 324deg);
+	border-radius: 100px;
+	box-shadow: 3px 3px 10px #000000;
+}
+
+/* Whole page */
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	text-align: center;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+/* Include margin and padding as width and height percentage */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Printing */
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	html, body {
+		width: 210mm;
+		height: 297mm;
+}}
+
+@media only screen and (max-width: 600px) {
+	img:hover {
+		display: flex;
+		flex-wrap: wrap;
+		transform: scale(400%);
+		position: absolute;
+		border: 0px solid #41656e;
+		box-shadow: 0 0 0px 0px #41656e;
+		margin: auto;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
